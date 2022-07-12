@@ -1,4 +1,4 @@
-import java.sql.SQLOutput;
+package Conta;
 
 public class TestaBanco {
     public static void main(String[] args) {
@@ -7,9 +7,9 @@ public class TestaBanco {
         cliente.cpf = "082.082.082-22";
         cliente.profissao = "programador";
 
-        Conta contaUm = new Conta();
+        /*Conta contaUm = new Conta();
         contaUm.depositar(100);
-        System.out.println(contaUm.saldo);
+        System.out.println(contaUm.saldo); */
     }
 }
 

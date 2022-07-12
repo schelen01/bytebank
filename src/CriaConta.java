@@ -1,5 +1,3 @@
-import java.io.PrintStream;
-
 public class CriaConta {
     public static void main(String[] args) { //ctrl espaço enter
         Conta primeiraConta = new Conta(); //o primeiro "Conta" é o tipo da variável "primeiraConta"

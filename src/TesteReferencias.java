@@ -1,6 +1,6 @@
 
 public class TesteReferencias { //é uma referência que dá um direcionamento, "uma flecha"
-//2 cartas diferentes mas que se direcionam ao memo lugar, ou 2 contas diferentes, mas que tem a mesa referência
+//2 cartas diferentes mas que se direcionam ao mesmo lugar, ou 2 contas diferentes, mas que tem a mesma referência
 
     public static void main(String[] args){
         Conta primeiraConta =new Conta();

@@ -1,14 +1,13 @@
-
 public class Conta {
     //especificação em Java
-    double saldo;
-    int agencia = 42; //especifiquei um valor padrão para agência
-    int numero;
-    String titular;
+   private double saldo;
+   private int agencia = 42; //especifiquei um valor padrão para agência
+   private int numero;
+   private Cliente titular;
 
 
     //criando métodos
-    void depositar(double valor) {
+    public void depositar(double valor) {
         this.saldo = this.saldo + valor; // referencio o atributo através do This
     }
 
@@ -29,7 +28,32 @@ public class Conta {
        }
             return false;
        }
+       public double getSaldo(){
+        //quando alguém pede o saldo, o que é preciso fazer? RETORNAR o saldo!
+           return this.saldo;
+       }
+
+       public int getNumero(){ //atributo privado, obtenho ele
+          return this.numero;
+       }
+       public void setNumero(int novoNumero){ //seto para obter novo número
+            this.numero = novoNumero; //this numero é o numero do atributo e o da direita é só numero, argumento
+       }
+
+        public int getAgencia() {
+          return this.agencia;
     }
 
+        public void setAgencia(int agencia) { //agencia não é o atributo agencia da classe Conta
+          this.agencia = agencia;
+    }
+
+        Conta contaDois = new Conta();
+
+        public void Cliente() {
+
+    }
+
+}
 
 //instanciar é criar
