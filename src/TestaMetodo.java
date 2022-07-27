@@ -25,8 +25,8 @@ public class TestaMetodo {
         System.out.println(contaDois.saldo);//após a transferência do valor, ficará?
         System.out.println(contaUm.saldo); //verifico qual é o saldo final da contaUm após a transferência
 
-        contaUm.titular = "Paulo Silveira"; //se fosse assim, lá em conta deveria ser STRING TITULAR
-        System.out.println(contaUm.titular);
+        //contaUm.titular = "Paulo Silveira"; //se fosse assim, lá em conta deveria ser STRING TITULAR. Não compila pq titular é privado
+        //System.out.println(contaUm.titular);
     }
     //Para navegar nas classes utilizamos o ctrl (está linkando todos os atributos, métodos e variáveis)
 }

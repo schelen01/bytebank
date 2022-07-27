@@ -5,6 +5,18 @@ public class Conta {
    private int numero;
    private Cliente titular;
 
+   private static int total; //Pq este atributo? Nova regra de negócio
+    //static é da Conta, e não do objeto conta. O objeto do tipo conta tem UM saldo, tem UMA agência,..
+    //Cada objeto conta tem o seu total, mas não quero, por isso acrescento o static (veja que ficou itálico)
+   public Conta(int agencia, int numero){ //necessariamente preciso passar agencia e numero se eu quiser criar uma conta
+       Conta.total ++; //toda vez que dou new preciso identificar que iniciei nova conta (através de uma variável)
+       System.out.println("O total de contas é " + total);
+       this.agencia = agencia;
+       this.numero = numero;
+       System.out.println("estou criando uma conta " + this.numero);
+
+   }
+
 
     //criando métodos
     public void depositar(double valor) {
@@ -54,6 +66,17 @@ public class Conta {
 
     }
 
+    public void setTitular(Cliente titular) {
+        this.titular = titular;
+    }
+
+    public Cliente getTitular() {
+        return titular;
+    }
+
+    public static int getTotal(){ //para que a conta entenda que quer o total das contas geradas, acrescenta o static
+            return Conta.total;
+    }
 }
 
 //instanciar é criar
